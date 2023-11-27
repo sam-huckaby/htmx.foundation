@@ -11,15 +11,20 @@
 <body>
 	<section class="container mx-auto px-4 md:px-6">
 		<header class="flex items-center justify-between py-6">
-			<a class="text-2xl font-bold" href="#" id="q0lryvewu58">&lt;<span class="text-blue-500">/</span>&gt; htm<span class="text-blue-500">x</span> foundation</a>
+			<a class="text-2xl font-bold" href="#" id="q0lryvewu58">&lt;<span
+					class="text-blue-500">/</span>&gt; htm<span class="text-blue-500">x</span>
+				foundation</a>
 			<nav>
-				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer" hx-get="./home.html" hx-target="#main_content_pane">
+				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer"
+					hx-get="./home.html" hx-target="#main_content_pane">
 					Home
 				</a>
-				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer" hx-get="./about.html" hx-target="#main_content_pane">
+				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer"
+					hx-get="./about.html" hx-target="#main_content_pane">
 					About
 				</a>
-				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer" hx-get="./apply.html" hx-target="#main_content_pane">
+				<a class="text-lg text-gray-600 dark:text-gray-200 mx-4 cursor-pointer"
+					hx-get="./apply.html" hx-target="#main_content_pane">
 					Apply
 				</a>
 			</nav>
@@ -27,12 +32,20 @@
 		<main class="my-10" id="main_content_pane" hx-trigger="load" hx-get="home.html" hx-target="this">
 			<!-- Content for the pages is rendered here -->
 		</main>
-		<footer class="flex flex-row items-center justify-between py-6 bg-neutral-900">
-			<span class="text-neutral-200">Sponsored by</span>
-			<div class="flex flex-col justify-center items-center"><img src="./ocamlist-logo.png" alt="OCamlist.com logo" /> <a href="https://ocamlist.com/">OCamlist.com</a></div>
-			<div class="flex flex-col justify-center items-center"><img src="./bitconquest-logo.png" alt="BitConquest.com logo" /> <a href="https://bitconquest.com/">BitConquest.com</a></div>
-		</footer>
 	</section>
+	<footer class="w-full flex flex-row items-center justify-between py-6 bg-neutral-900">
+		<span class="text-neutral-200 text-2xl">Sponsored by</span>
+		<div class="flex flex-col justify-center items-center text-neutral-200">
+			<a href="https://ocamlist.com/">
+				<img src="./ocamlist-logo.png" class="h-48 w-48"
+					alt="OCamlist.com logo" />OCamlist.com</a>
+		</div>
+		<div class="flex flex-col justify-center items-center text-neutral-200">
+			<a href="https://bitconquest.com/">
+				<img src="./bitconquest-logo.png" class="h-48 w-48"
+					alt="BitConquest.com logo" />BitConquest.com</a>
+		</div>
+	</footer>
 </body>
 
 </html>
