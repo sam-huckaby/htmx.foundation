@@ -1,0 +1,4 @@
+(executable
+ (public_name htmx_foundation)
+ (name main)
+ (libraries dream htmx_foundation))
