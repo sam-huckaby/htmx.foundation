@@ -6,6 +6,19 @@
 	<script src="htmx.min.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<title>htmx foundation - guardians of hypermedia</title>
+	<style>
+		.smooth.htmx-swapping {
+			opacity: 0;
+			transition: opacity 1s ease-out;
+		}
+		.smooth.htmx-added {
+			opacity: 0;
+		}
+		.smooth {
+			opacity: 1;
+			transition: opacity 1s ease-out;
+		}
+	</style>
 </head>
 
 <body class="dark:bg-neutral-700 h-full flex flex-col">
@@ -29,7 +42,7 @@
 				</a>
 			</nav>
 		</header>
-		<main class="my-10 dark:text-neutral-200" id="main_content_pane" hx-trigger="load" hx-get="home.html" hx-target="this">
+		<main class="my-10 dark:text-neutral-200 smooth" id="main_content_pane" hx-trigger="load" hx-get="home.html" hx-target="this">
 			<!-- Content for the pages is rendered here -->
 		</main>
 	</section>
